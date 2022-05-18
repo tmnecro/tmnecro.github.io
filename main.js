@@ -7912,12 +7912,12 @@ Webflow.define('brand', module.exports = function ($) {
   }
 
   function createBadge() {
-    var $brand = $('<a class="w-webflow-badge"></a>').attr('href', 'https://webflow.com?utm_campaign=brandjs');
-    var $logoArt = $('<img>').attr('src', 'https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg').attr('alt', '').css({
+    var $brand = $('<a class="w-webflow-badge"></a>').attr('href', '');
+    var $logoArt = $('<img>').attr('src', '').attr('alt', '').css({
       marginRight: '8px',
       width: '16px'
     });
-    var $logoText = $('<img>').attr('src', 'https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg').attr('alt', 'Made in Webflow');
+    var $logoText = $('<img>').attr('', '').attr('alt', '');
     $brand.append($logoArt, $logoText);
     return $brand[0];
   }
