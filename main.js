@@ -96,7 +96,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var check = function (it) {
-    return it && it.Math == Math && it;
+  return it && it.Math == Math && it;
 };
 
 // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
@@ -7912,12 +7912,12 @@ Webflow.define('brand', module.exports = function ($) {
   }
 
   function createBadge() {
-    var $brand = $('<a class="w-webflow-badge"></a>').attr('href', '');
-    var $logoArt = $('<img>').attr('src', '').attr('alt', '').css({
+    var $brand = $('').attr('href', '');
+    var $logoArt = $('').attr('src', '').attr('alt', '').css({
       marginRight: '8px',
       width: '16px'
     });
-    var $logoText = $('<img>').attr('', '').attr('alt', '');
+    var $logoText = $('').attr('src', '').attr('alt', '');
     $brand.append($logoArt, $logoText);
     return $brand[0];
   }
