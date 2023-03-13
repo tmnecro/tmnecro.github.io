@@ -1,12 +1,16 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Aura</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
-		<script type="text/javascript" src="main2.js"></script>
+		<script type="text/javascript" src="main.js"></script>
 
 	</head>
 <body>
+
+
+<div id="container" touch-action="none"></div>
 
 <nav class="nav nav--left">
   <ul>
@@ -17,7 +21,7 @@
       <a href="1.html"><span>Link2</span></a>
     </li>
     <li>
-      <a href="#"><span>Link3</span></a>
+      <a href="2.html"><span>Link3</span></a>
     </li>
   </ul>
 </nav>
@@ -34,42 +38,23 @@
   </ul>
 </nav>
 
-    
-    <div class="slider__text">
-      <div class="slider__text-line"><div>Exhibiting</div></div>
-      <div class="slider__text-line"><div>YESTERDAY, TODAY</div></div>
-      <div class="slider__text-line"><div>AND TOMORROW'S</div></div>
-      <div class="slider__text-line"><div>ARTS.</div></div>
+  <div class="slide">
+    <div class="slide__content">
+      <figure class="slide__img">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo6.jpg">
+      </figure>
+       <figure class="slide__img">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg">
+      </figure>
     </div>
     
-  </div>
+
   
-  
-  <nav class="slider__nav">
-    <div class="slider-bullet">
-      <span class="slider-bullet__text">2021</span>
-      <span class="slider-bullet__line"></span>
-    </div>
-     <div class="slider-bullet">
-      <span class="slider-bullet__text">2022</span>
-      <span class="slider-bullet__line"></span>
-    </div>
-     <div class="slider-bullet">
-      <span class="slider-bullet__text">2023</span>
-      <span class="slider-bullet__line"></span>
-    </div>
-  </nav>
   
 </div>
 
-<div class="vert-text">
-  <span>
-  NEXT EXHIBITION: March 2023
-</span>
-</div>
-</body>
-
-<script id="vertexShader" type="x-shader/x-vertex">
+	
+	<script id="vertexShader" type="x-shader/x-vertex">
     void main() {
         gl_Position = vec4( position, 1.0 );
     }
@@ -243,7 +228,7 @@
     gl_FragColor = render;
   }
 </script>
-	
 
-<div id="container" touch-action="none"></div>
 	
+</body>
+</html>

@@ -21,7 +21,7 @@ loader.load(
     texture.wrapT = THREE.RepeatWrapping;
     texture.minFilter = THREE.LinearFilter;
     loader.load(
-      "https://raw.githubusercontent.com/tmnecro/tmnecro.github.io/main/bg.jpg",
+      "https://raw.githubusercontent.com/tmnecro/tmnecro.github.io/main/rainbowbroke-specular.png",
       function environment_load(tex) {
         environment = tex;
         environment.wrapS = THREE.RepeatWrapping;

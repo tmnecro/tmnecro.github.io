@@ -39,7 +39,7 @@ a {
 
 .logo {
   position: absolute;
-  top: 1rem;
+  top: 0rem;
   left: 50%;
   transform: translateX(-50%);
   padding: 0;
@@ -48,7 +48,7 @@ a {
 }
 .logo img {
   display: block;
-  height: 5rem;
+  height: 8rem;
   width: auto;
 }
 
