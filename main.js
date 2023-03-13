@@ -63,7 +63,7 @@ function init() {
   scene.add(mesh);
 
   renderer = new THREE.WebGLRenderer();
-  renderer.setPixelRatio(1);
+  renderer.setPixelRatio(.5);
 
   container.appendChild(renderer.domElement);
 
@@ -83,8 +83,8 @@ function init() {
 
 function onWindowResize(event) {
   renderer.setSize(window.innerWidth, window.innerHeight);
-  uniforms.u_resolution.value.x = renderer.domElement.width/.1;
-  uniforms.u_resolution.value.y = renderer.domElement.height/.1;
+  uniforms.u_resolution.value.x = renderer.domElement.width/1;
+  uniforms.u_resolution.value.y = renderer.domElement.height/1;
 }
 
 function animate() {
