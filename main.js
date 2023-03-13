@@ -83,8 +83,8 @@ function init() {
 
 function onWindowResize(event) {
   renderer.setSize(window.innerWidth, window.innerHeight);
-  uniforms.u_resolution.value.x = renderer.domElement.width;
-  uniforms.u_resolution.value.y = renderer.domElement.height;
+  uniforms.u_resolution.value.x = renderer.domElement.width/.1;
+  uniforms.u_resolution.value.y = renderer.domElement.height/.1;
 }
 
 function animate() {
